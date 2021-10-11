@@ -1,0 +1,17 @@
+close all
+clear all
+clc
+ 
+%??????
+info =audioinfo('E01.wav');%?????????
+info
+[audio,Fs] = audioread('E01.wav');%??????
+%sound(audio,Fs);%??????
+audiolength = length(audio);%?????????C:\Users\1298474590\Documents\Adobe\Premiere Pro\12.0\Adobe Premiere Pro Captured Audio\???\?? 1.wav??
+t = 1:1:audiolength;
+ 
+figure(1),
+plot(t,audio(1:audiolength));
+xlabel('Time');
+ylabel('Audio Signal');
+title('时域分析');
