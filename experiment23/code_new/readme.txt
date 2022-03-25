@@ -1,0 +1,5 @@
+1、运行code里的main文件生成feature和label
+2、运行code里的classifyer实现分类，打印准确率
+使用方法：将音频文件放入data文件夹里。
+改变main文件第8行singer_index为你对应的字母，第9行选择要得到的特征向量维度，第10行选择窗函数，
+运行main文件，可在data文件夹里得到处理后的语音特征向量、标签
